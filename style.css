@@ -1,0 +1,103 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+#create-account-form {
+    width: 400px;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    margin-bottom: 20px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.input-group label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.error input {
+    border:3px red solid;
+}
+
+.success input {
+    border:3px green solid;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #6f42c1; /* Purple border when focused */
+}
+
+.input-group i {
+    position: absolute;
+    right: 10px;
+    top: 35px;
+    font-size: 20px;
+    color: #ccc;
+    visibility: hidden;
+}
+
+.success i.fa-check-circle{
+    visibility: visible;
+    color:green;
+}
+
+.error i.fa-exclamation-circle {
+   visibility: visible;
+   color:red;
+}
+
+.input-group p {
+    font-size: 14px;
+    color: #dc3545; /* Red color for error message */
+    margin-top: 5px;
+    visibility: hidden;
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 18px;
+    background-color: #6f42c1; /* Purple background color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* changes in bg color*/
+}
+
+.btn:hover {
+    background-color: #5a3b91; /* Darker purple on hover */
+}
